@@ -32,13 +32,18 @@ body
 
     &__content
     {
+        margin-left: 12px;
+
         &__bloc
         {
             display: flex;
             background-color: constant.$bg-color-light;
+            box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.15);
 
-            padding-top: 28px;
-            padding-bottom: 22px;
+            padding: 28px 0 22px 0;
+            margin-bottom: 25px; 
+
+            border-radius: 25px;
 
             &__step
             {
@@ -48,7 +53,11 @@ body
                 width: 24px;
                 height: 24px;
 
+                margin-left: -12px;
+
                 border-radius: 90px; 
+
+                font-size: 14px;
 
                 @include constant.center_bloc;
             }

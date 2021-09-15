@@ -1,0 +1,12 @@
+{
+    "name": "sass",
+    "version": "1.0.0",
+    "description": "application ohmyfood",
+    "main": "index.js",
+    "scripts": {
+      "sass": "sass --watch ./sass:./css --style compressed",
+      "prefix": "postcss ./css/*.css --use autoprefixer -d ./css/"
+    },
+    "author": "Antony JACQUES",
+    "license": "ISC"
+  }
