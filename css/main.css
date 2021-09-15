@@ -14,4 +14,34 @@ body {
   font-family: "Roboto";
 }
 
+.info {
+  padding: 0 20px;
+}
+.info__title {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 21px;
+}
+.info__content__bloc {
+  display: flex;
+  background-color: #f6f6f6;
+  padding-top: 28px;
+  padding-bottom: 22px;
+}
+.info__content__bloc__step {
+  background-color: #9356DC;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 90px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.info__content__bloc__icon {
+  opacity: 0.6;
+  margin: 0 22px;
+}
+
 /*# sourceMappingURL=main.css.map */

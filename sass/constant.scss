@@ -3,3 +3,10 @@ $secondary-color: #FF79DA ;
 $tertio-color: #99E2D0 ;
 
 $bg-color-light: #f6f6f6;
+
+@mixin center_bloc {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
