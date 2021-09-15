@@ -15,6 +15,7 @@ header #brand-logo {
 
 .home {
   text-align: center;
+  background-color: #f6f6f6;
 }
 .home__locate {
   background-color: #eaeaea;
@@ -37,10 +38,12 @@ header #brand-logo {
   background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
   color: white;
   margin-top: 30px;
+  margin-bottom: 55px;
   padding: 16px 22px;
   border: none;
   border-radius: 90px;
   cursor: pointer;
+  box-shadow: 0 1px 10px #c5c5c5;
 }
 
 /*# sourceMappingURL=header.css.map */
