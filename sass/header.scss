@@ -13,13 +13,19 @@ header
     z-index: 1;
 
     box-shadow: 0px 1px 14px 0px rgba(0,0,0,0.171);
-}
 
-header #brand-logo
-{
-    text-align: center;
-}
+    #brand-logo
+    {
+        text-align: center;
+        margin-top: 22px;
+        margin-bottom: 10px;
 
+        img
+        {
+            height: 30px;
+        }
+    }
+}
 
 
 .home
@@ -59,21 +65,24 @@ header #brand-logo
 
         &__btn
         {
-            font-size: 16px;
-
-            background: linear-gradient(to top, constant.$primary-color 0%, constant.$secondary-color 100%);
-            color: white;
-
             margin-top: 30px;
             margin-bottom: 55px;
-
-            padding: 16px 22px;
-            border: none;
-
-            border-radius: 90px;
-            cursor: pointer;
-
-            box-shadow: 0 1px 10px #c5c5c5;
         }
     }
+}
+
+.btn_action
+{
+    font-size: 16px;
+
+    background: linear-gradient(to top, constant.$primary-color 0%, constant.$secondary-color 100%);
+    color: white;
+
+    padding: 16px 22px;
+    border: none;
+
+    border-radius: 90px;
+    cursor: pointer;
+
+    box-shadow: 0 1px 10px #c5c5c5;
 }
