@@ -93,61 +93,6 @@ body
 }
 
 
-.like
-{
-    border: none;
-    background: none;
-    position: relative;
-    cursor: pointer;
-
-    font-size: 25px;
-
-    &__icon
-    {
-        background: none;
-
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-
-        &::after
-        {
-            opacity: 1;
-            -webkit-text-stroke: 1px black;
-            background: none;
-            background-clip: text;
-            -webkit-background-clip: text;
-            z-index: 1;
-            content: "\f004";
-            transition: all .5s ease;
-        }
-
-        &::before
-        {
-            opacity: 0;
-            background: #9356DC;
-            background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
-                background-clip: border-box;
-            background-clip: text;
-            -webkit-background-clip: text;
-            transition: all .5s ease;
-        }
-
-        &::before,&::after
-        {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            -webkit-text-fill-color: transparent;
-        }
-    }
-}
-
-
 .card
 {
     border-radius: 20px;

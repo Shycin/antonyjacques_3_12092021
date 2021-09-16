@@ -1,0 +1,47 @@
+.restaurant
+{
+    &__header
+    {
+        &__img
+        {
+            height: 256px;
+            overflow: hidden;
+            width: 100%;
+
+            img
+            {
+                width: 110%;
+                height: 100%;
+
+                margin-left: -20px;
+            }
+        }  
+
+        &__content
+        {
+            padding: 34px 18px;
+            margin-top: -50px;
+            background-color: white;
+            z-index: 1;
+            position: relative;
+            border-top-right-radius: 40px;
+            border-top-left-radius: 40px;
+
+            display: flex;
+            justify-content: space-between;
+
+            &__name
+            {
+                h1
+                {
+                    font-family: "Shrikhand";
+                }
+            }
+
+            &__like
+            {
+                margin-right: 38px;
+            }
+        }
+    }
+}
