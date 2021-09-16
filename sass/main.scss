@@ -66,12 +66,44 @@ body
             {
                 opacity: 0.6;
                 margin: 0 22px;
-            }
 
-            &__description
-            {
-                
+                &.fa-store
+                {
+                    opacity: 1;
+                    color: constant.$primary-color;
+                }
             }
+        }
+    }
+}
+
+
+.restaurants
+{
+    margin-top: 70px;
+    padding: 0 20px;
+
+    &__title
+    {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 21px;
+    }
+}
+
+.card
+{
+    &__image
+    {
+        overflow: hidden;
+        width: 325px;
+        height: 175px;
+
+        img
+        {
+            width: 325px;
+            height: calc(175px*1.2);
+            margin-top: -15%;
         }
     }
 }
