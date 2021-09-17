@@ -41,4 +41,19 @@
             }
         }
     }
+
+
+    &__content
+    {
+        padding: 0 14px;
+
+        &__categories
+        {
+            &__title
+            {
+                padding: 6px;
+            }
+        }
+
+    }
 }
