@@ -12,6 +12,6 @@ $bg-color-dark: #353535;
     flex-direction: column;
 }
 
-@mixin ombre {
-    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.15);
+@mixin ombre($x: 0px, $y: 8px, $blur: 10px) {
+    box-shadow: $x $y $blur 0px rgba(0, 0, 0, 0.15);
 }
