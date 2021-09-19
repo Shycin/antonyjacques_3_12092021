@@ -83,6 +83,9 @@ header
 
 .btn_action
 {
+    position: relative;
+    z-index: 1;
+
     font-size: 16px;
 
     background: linear-gradient(to top, constant.$primary-color 0%, constant.$secondary-color 100%);
@@ -94,5 +97,28 @@ header
     border-radius: 90px;
     cursor: pointer;
 
-    box-shadow: 0 1px 10px #c5c5c5;
+    @include constant.ombre(0px, 1px, 10px, #c5c5c5);
+
+    &:hover
+    {
+        &::after
+        {
+            opacity: 1;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to top, lighten(constant.$primary-color, 15%) 0%, lighten(constant.$secondary-color, 15%) 100%);
+        @include constant.ombre(5px, 5px, 5px,#c5c5c5);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+        border-radius: 90px;
+    }
 }

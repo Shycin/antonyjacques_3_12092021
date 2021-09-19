@@ -17,6 +17,9 @@
 
         &__bloc
         {
+            position: relative;
+            z-index: 1;
+
             display: flex;
             background-color: constant.$bg-color-light;
             @include constant.ombre;
@@ -25,6 +28,8 @@
             margin-bottom: 25px; 
 
             border-radius: 25px;
+
+            cursor: pointer;
 
             &__step
             {
@@ -53,6 +58,33 @@
                     opacity: 1;
                     color: constant.$primary-color;
                 }
+            }
+
+            &:nth-child(3)
+            {
+                background-color: #f5edff;
+            }
+
+            &:hover
+            {
+                &::after
+                {
+                    opacity: 1;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                @include constant.ombre(5px, 5px, 5px,#c5c5c5);
+                opacity: 0;
+                z-index: -1;
+                transition: opacity 250ms;
+                border-radius: 25px;
             }
         }
     }
