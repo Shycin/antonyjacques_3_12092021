@@ -12,6 +12,13 @@ $bg-color-dark: #353535;
     flex-direction: column;
 }
 
+@mixin center_bloc_fin {
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
 @mixin ombre($x: 0px, $y: 8px, $blur: 10px, $rgba: rgba(0, 0, 0, 0.15)) {
     box-shadow: $x $y $blur 0px $rgba;
 }

@@ -1,5 +1,6 @@
 @use 'constant';
 
+
 .restaurant
 {
     &__header
@@ -104,9 +105,76 @@
     &__plat
     {
         cursor: pointer;
-        padding: 16px 10px;
         margin-bottom: 14px;
         border-radius: 15px;
+
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+
+
+        &:hover &
+        {
+            &__prix, &__check
+            {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+
+            &__check
+            {
+                .fas
+                {
+                    transform: rotateZ(1turn);
+                }
+            }
+        }
+
+        &>div
+        {
+            padding: 16px 0;
+        }
+
+        &__content
+        {
+            width: calc(100% - 120px);
+            padding-left: 10px !important;
+
+            &>*
+            {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+
+        &__prix
+        {
+            @include constant.center_bloc_fin;
+
+            transition: all .6s ease;
+            transform: translateX(50px);
+        }
+
+        &__check
+        {
+            @include constant.center_bloc;
+
+            width: 60px;
+            opacity: 0;
+            transition: all .6s ease;
+            transform: translateX(80px);
+
+            background-color: constant.$tertio-color;
+            color: white;
+
+            font-size: 22px;
+
+            .fas
+            {
+                transition: all 0.6s ease;
+            }
+        }
 
         @include constant.ombre(0px,0px);
 
