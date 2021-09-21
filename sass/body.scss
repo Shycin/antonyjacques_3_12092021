@@ -49,6 +49,7 @@ ul
     cursor: pointer;
 
     font-size: 25px;
+    width: 25px;
 
     &__icon
     {
@@ -56,6 +57,11 @@ ul
 
         -webkit-text-fill-color: transparent;
         background-clip: text;
+
+        &:hover::before
+        {
+            opacity: 1;
+        }
 
         &::after
         {
