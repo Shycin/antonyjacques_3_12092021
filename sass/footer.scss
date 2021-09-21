@@ -4,7 +4,6 @@ footer
 {
     font-size: 16px;
     background-color: constant.$bg-color-dark;
-    color: white;
 
     padding: 26px;
 
@@ -15,11 +14,19 @@ footer
         li
         {
             margin: 10px 0;
+            cursor: pointer;
+            color: white;
+
+            a
+            {
+                color: white;
+            }
 
             .fas
             {
                 font-size: 13px;
                 margin-right: 10px;
+                width: 15px;
             }
         }
     }
