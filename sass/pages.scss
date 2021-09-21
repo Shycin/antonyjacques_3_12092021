@@ -100,6 +100,21 @@
     }
 }
 
+.restaurant__content
+{
+    @for $group from 1 to 4 
+    {
+        @for $i from 1 to 4 
+        {
+            & :nth-child(#{$group}) .menu :nth-child(#{$i}) 
+            { 
+                animation-delay: $group - 1 + $i * 0.25s ; 
+            }
+        }
+    }
+}
+
+
 .menu
 {
     &__plat
@@ -113,6 +128,13 @@
         justify-content: space-between;
         overflow: hidden;
 
+        opacity: 0;
+
+        animation-name: fadein;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
 
         &:hover &
         {
@@ -199,4 +221,19 @@
             }
         }
     }
+}
+
+@keyframes fadein 
+{ 
+    from 
+    { 
+        transform: translateY(10px);
+        opacity: 0; 
+    } 
+    
+    to 
+    { 
+        transform: translateY(0px);
+        opacity: 1; 
+    }  
 }
