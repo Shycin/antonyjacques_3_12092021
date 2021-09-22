@@ -108,10 +108,18 @@
 
 .card
 {
+    position: relative;
     border-radius: 20px;
     background-color: white;
     margin-bottom: 18px;
     @include constant.ombre;
+
+    &__new {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1;
+    }
 
     &__image
     {

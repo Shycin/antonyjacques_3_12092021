@@ -116,7 +116,7 @@ ul
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    animation-duration: 3000ms;
+    animation-duration: 2000ms;
 
     &::before
     {
@@ -186,4 +186,14 @@ ul
     {
         transform: rotateZ(1turn);
     }
+}
+
+
+
+.icon_new {
+    background-color: constant.$tertio-color;
+    padding: 10px 14px;
+    font-weight: bold;
+    font-size: 14px;
+    color: darken(constant.$tertio-color, 30%);
 }
