@@ -1,6 +1,11 @@
 @use 'constant';
 
 
+main
+{
+    background-color: constant.$bg-color-light;
+}
+
 .restaurant
 {
     &__header
@@ -11,12 +16,25 @@
             overflow: hidden;
             width: 100%;
 
+            @media screen and (min-width:800px) {
+
+                height: 400px !important; 
+            }
+
             img
             {
+                @media screen and (min-width:800px) {
+
+                    object-fit: cover;
+                    width: 100% !important;
+                    height: 100% !important; 
+                    margin: 0 !important;
+                }
+
                 width: 110%;
                 height: 100%;
 
-                margin-left: -20px;
+                margin-left: -20px; 
             }
 
             &--vertical
@@ -33,9 +51,17 @@
 
         &__content
         {
+            @media screen and (min-width:800px) {
+
+                background-color: lighten(constant.$bg-color-dark, 70% );
+                margin-top: -80px;
+            }
+
+            @include constant.max-size;
+
             padding: 34px 18px;
             margin-top: -50px;
-            background-color: white;
+            background-color: constant.$bg-color-light;
             z-index: 1;
             position: relative;
             border-top-right-radius: 40px;
@@ -60,7 +86,13 @@
 
     &__content
     {
-        padding: 0 14px;
+        @include constant.max-size;
+        padding: 0 18px 80px 18px;
+
+        @media screen and (min-width:800px) {
+
+            background-color: lighten(constant.$bg-color-dark, 70% );
+        }
 
         &__categories
         {
@@ -88,7 +120,6 @@
         {
             display: flex;
             justify-content: center;
-            margin-bottom: 80px;
 
             .btn_action
             {
@@ -102,9 +133,9 @@
 
 .restaurant__content
 {
-    @for $group from 1 to 4 
+    @for $group from 1 to 10 
     {
-        @for $i from 1 to 4 
+        @for $i from 1 to 10 
         {
             & :nth-child(#{$group}) .menu :nth-child(#{$i}) 
             { 
@@ -119,6 +150,12 @@
 {
     &__plat
     {
+        @media screen and (min-width:800px) {
+
+            background-color: constant.$bg-color-light;
+        }
+
+
         @include constant.ombre(0px,0px);
         cursor: pointer;
         margin-bottom: 14px;

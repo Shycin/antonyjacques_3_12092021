@@ -1,6 +1,6 @@
 @use "constant";
 
-footer
+.footer
 {
     font-size: 16px;
     background-color: constant.$bg-color-dark;
@@ -28,6 +28,16 @@ footer
                 margin-right: 10px;
                 width: 15px;
             }
+        }
+    }
+
+    &__content
+    {
+        @include constant.max-size;
+
+        @media screen and (min-width:800px) {
+
+            text-align: center;
         }
     }
 }

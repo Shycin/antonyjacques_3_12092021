@@ -22,3 +22,8 @@ $bg-color-dark: #353535;
 @mixin ombre($x: 0px, $y: 8px, $blur: 10px, $rgba: rgba(0, 0, 0, 0.15)) {
     box-shadow: $x $y $blur 0px $rgba;
 }
+
+@mixin max-size {
+    max-width: 800px;
+    margin: auto;
+}

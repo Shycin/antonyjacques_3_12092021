@@ -2,6 +2,7 @@
 
 .info
 {
+    @include constant.max-size;
     padding: 0 20px;
 
     &__title
@@ -99,9 +100,30 @@
 
     &__title
     {
+        @include constant.max-size;
         padding-top: 50px;
         margin-bottom: 30px;
         font-size: 21px;
+    }
+
+    &__content
+    {
+        @include constant.max-size;
+
+        padding-bottom: 65px;
+    }
+
+
+    @media screen and (min-width:800px) {
+
+        &__content
+        {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            gap: 0px 20px;
+            grid-template-areas: "title title" "d1 d2" "d3 d4";
+        }  
     }
 }
 
