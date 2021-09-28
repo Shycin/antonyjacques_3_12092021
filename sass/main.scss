@@ -31,6 +31,7 @@
             border-radius: 25px;
 
             cursor: pointer;
+            font-weight: bold;
 
             &__step
             {
@@ -193,6 +194,7 @@
 
         &__localisation
         {
+            margin-top: 10px;
             font-size: 16px;
         }
 

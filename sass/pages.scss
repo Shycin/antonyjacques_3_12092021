@@ -198,6 +198,7 @@ main
         &__content
         {
             width: calc(100% - 120px);
+            flex: 1;
             padding-left: 10px !important;
 
             &>*
@@ -205,6 +206,12 @@ main
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
+            }
+
+            &__description
+            {
+                margin-top: 10px;
+                color: rgba(0,0,0,0.7);
             }
         }
 

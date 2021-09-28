@@ -37,7 +37,22 @@
 
         @media screen and (min-width:800px) {
 
+            display: flex;
+            justify-content: center;
+
             text-align: center;
+
+            ul
+            {
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                
+                li
+                {
+                    margin: 0px 20px;
+                }
+            }
         }
     }
 }
